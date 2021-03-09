@@ -20,5 +20,6 @@
   "devDependencies": {
     "esbuild": "^0.8.56",
     "pkg": "^4.4.9"
+    "prettier": "^2.2.1"
   }
 }
