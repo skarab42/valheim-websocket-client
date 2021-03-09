@@ -1,0 +1,17 @@
+{
+  "twitch": {
+    "clientId": null,
+    "accessToken": null,
+    "refreshToken": null
+  },
+  "server": {
+    "host": "localhost",
+    "port": 60157
+  },
+  "routes": {
+    "rewards": {
+      "a8005c39-2ea9-4bf9-88c1-8c91e90fa8da": "hugin/message/:userName/:message"
+    }
+  },
+  "logLevel": "debug"
+}
