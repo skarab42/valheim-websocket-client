@@ -1,6 +1,6 @@
-const errorHandler = require("./errorHandler");
-const config = require("./config");
-const logr = require("./logr");
+const errorHandler = require("./libs/errorHandler");
+const config = require("./libs/config");
+const logr = require("./libs/logr");
 
 logr.setSettings({
   fileRotate: {
@@ -14,7 +14,3 @@ errorHandler();
 const logger = logr("client");
 
 logger.info(`${config.app.name} v${config.app.version}`);
-
-Promise.reject("Kapouééééé");
-Promise.reject(new Error("Prout1"));
-throw new Error("Prout2");

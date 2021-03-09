@@ -2,7 +2,7 @@ const path = require("path");
 const fs = require("fs-extra");
 const merge = require("deepmerge");
 const minimist = require("minimist");
-const { name, version } = require("../package");
+const { name, version } = require("../../package");
 
 const pkg = !!process.env.PKG;
 const argv = minimist(process.argv.slice(2));
