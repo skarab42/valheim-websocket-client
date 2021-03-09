@@ -6,12 +6,11 @@
   "license": "MIT",
   "scripts": {
     "start": "node .",
-    "bundle": "node bin/bundle.js",
-    "build": "node bin/build.js",
+    "bundle": "node tools/bundle.js",
+    "build": "node tools/build.js",
     "dist": "yarn bundle && yarn build"
   },
   "dependencies": {
-    "dotenv-flow": "^3.2.0",
     "fs-extra": "^9.1.0",
     "twitch": "^4.5.0",
     "twitch-pubsub-client": "^4.5.0",
@@ -19,7 +18,7 @@
   },
   "devDependencies": {
     "esbuild": "^0.8.56",
-    "pkg": "^4.4.9"
+    "pkg": "^4.4.9",
     "prettier": "^2.2.1"
   }
 }
