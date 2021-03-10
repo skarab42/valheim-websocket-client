@@ -31,10 +31,9 @@ function parseRoute(route, payload) {
 
 pubsub({
   onRedemption(payload) {
-    const { rewardId, userName, message } = payload;
+    const { rewardId, rewardName, userName, message } = payload;
 
-    twitchLogger.info(`rewardId`, rewardId);
-    twitchLogger.debug(`onRedemption`, { rewardId, userName, message });
+    twitchLogger.info(`onRedemption`, { rewardName, rewardId });
 
     const route = config.routes.rewards[rewardId];
 
