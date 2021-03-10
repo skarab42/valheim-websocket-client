@@ -10,8 +10,10 @@
   },
   "routes": {
     "rewards": {
-      "a8005c39-2ea9-4bf9-88c1-8c91e90fa8da": "hugin/message/:userName/:message",
-      "f82f4c01-835b-4988-b3de-dc75088edd1e": "player/message/:userName/:message"
+      "a8005c39-2ea9-4bf9-88c1-8c91e90fa8da": "message/raven/hugin/:userName/:message",
+      "41b3d506-49f9-45c5-b088-77c8ee159f3d": "message/raven/munin/:userName/:message",
+      "f82f4c01-835b-4988-b3de-dc75088edd1e": "message/player/center/:userName/:message",
+      "f1919e9b-3be3-4b77-b2cd-012de5315a22": "message/player/top-left/:userName/:message"
     }
   },
   "logLevel": "debug"
