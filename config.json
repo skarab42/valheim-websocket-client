@@ -10,7 +10,8 @@
   },
   "routes": {
     "rewards": {
-      "a8005c39-2ea9-4bf9-88c1-8c91e90fa8da": "hugin/message/:userName/:message"
+      "a8005c39-2ea9-4bf9-88c1-8c91e90fa8da": "hugin/message/:userName/:message",
+      "f82f4c01-835b-4988-b3de-dc75088edd1e": "player/message/:userName/:message"
     }
   },
   "logLevel": "debug"

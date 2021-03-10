@@ -31,7 +31,8 @@ let globalSettings = {
 
 function writeLine(stream, line, ...data) {
   if (data.length) {
-    line += ` ${JSON.stringify(data[0])}`;
+    const names = Object.getOwnPropertyNames(data[0]);
+    line += ` ${JSON.stringify(data[0], names)}`;
   }
 
   stream.write(`[${new Date().toISOString()}]${line}\n`);

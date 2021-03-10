@@ -16,7 +16,7 @@ let files = [file];
 let config = {};
 
 function exit(message, code = 0) {
-  console.error(`[config] ${message}`);
+  throw new Error(`[config] ${message}`);
   process.exit(code);
 }
 
@@ -38,7 +38,7 @@ if (!pkg) {
 
 if (argv.config) {
   const userFiles = Array.isArray(argv.config) ? argv.config : [argv.config];
-  files = [...files, ...userFiles.map((file) => path.resolve(file))];
+  files = [...files, ...userFiles.map((file) => path.resolve(cwd, file))];
 }
 
 files.forEach(loadConfig);
