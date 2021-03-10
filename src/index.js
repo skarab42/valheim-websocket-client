@@ -33,8 +33,8 @@ pubsub({
   onRedemption(payload) {
     const { rewardId, userName, message } = payload;
 
-    twitchLogger.debug(`onRedemption`, payload);
     twitchLogger.info(`rewardId`, rewardId);
+    twitchLogger.debug(`onRedemption`, { rewardId, userName, message });
 
     const route = config.routes.rewards[rewardId];
 
