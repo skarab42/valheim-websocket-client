@@ -2,7 +2,7 @@ const { name, version } = require("../package.json");
 const esbuild = require("esbuild");
 const fs = require("fs-extra");
 
-fs.copySync("config.json", "dist/config.json");
+fs.copySync("config.json", "dist/config.json", { overwrite: true });
 
 esbuild
   .build({
