@@ -15,7 +15,7 @@
     "deepmerge": "^4.2.2",
     "file-stream-rotator": "^0.5.7",
     "fs-extra": "^9.1.0",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "twitch": "^4.5.0",
     "twitch-pubsub-client": "^4.5.0",
     "ws": "^7.4.4"
